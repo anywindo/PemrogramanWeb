@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Reservation Hotel Room</title>
+</head>
+<body>
+    <h1><strong>Reservation Hotel Room</strong></h1>
+    <form action="" method="post" enctype="application/x-www-form-urlencoded">
+<!--        Personal Data-->
+        <fieldset>
+            <legend><strong>Personal Data</strong></legend>
+            <ol>
+                <li>Name</li>
+                <input type="text" name="name" style="width: 85%" />
+                <li>Gender</li>
+                <input type="text" name="gender" style="width: 85%" />
+                <li>Email Address</li>
+                <input type="text" name="email" style="width: 85%" />
+                <li>Telp Number</li>
+                <input type="text" name="telp" style="width: 85%" />
+            </ol>
+        </fieldset>
+<!--        Reservation Room Form-->
+        <legend><strong>Reservation Room Form</strong></legend>
+        <ol>
+            <li>Reservator Name</li>
+            <input type="text" name="reservatorname" style="width: 85%" />
+            <li>Booking Date</li>
+            <input type="text" name="date" style="width: 85%" />
+            <li>Room Type</li>
+            <select id="room" name="room" style="width: 85%">
+                <option>Deluxe</option>
+                <option>Suite</option>
+                <option>Studio</option>
+            </select>
+            <li>Bed Type</li>
+            <select id="bed" name="bed" style="width: 85%">
+                <option>Single Bed</option>
+                <option>Twin Bed</option>
+                <option>Double Bed</option>
+                <option>Queen Bed</option>
+                <option>King Bed</option>
+            </select>
+            <li>Breakfast</li>
+            <input type="radio" id="breakfastwith" name="breakfast" value="with" /> With Breakfast
+            <input type="radio" id="breakfastwithout" name="breakfast" value="without" /> Without Breakfast
+        </ol>
+<!--        Payment Form-->
+        <fieldset>
+            <legend><strong>Payment</strong></legend>
+            <ol>
+                <li>Check-in Date</li>
+                <input type="text" name="checkin" style="width: 85%" />
+                <li>Check-out Date</li>
+                <input type="text" name="checkout" style="width: 85%" />
+                <li>Payment Method</li>
+                <select id="room" name="room">
+                    <option>Cash</option>
+                    <option>Debit</option>
+                    <option>Credit</option>
+                </select>
+            </ol>
+        </fieldset>
+<!--        Submit-->
+        <input type="submit" id="submit" name="submit" value="Submit" />
+    </form>
+</body>
+</html>
